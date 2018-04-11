@@ -1,20 +1,20 @@
 
 # short-term projection model
-\code{run_projection} run the projection model with specified inputs 
-@param report, a .rep file contains outputs from the assessment model
-@param par_est, a .std file contains standard error estimates 
-@param select_id, a vector - number of selectivity time blocks, which one for trawl and which one for trap used in projection
-@param M, natrual mortality 
-@param n_proj_year, number of years (projection)
-@param N_rep, number of iterations
-@param F_trawl_proj, a vector of fishing mortality (trawl)
-@param F_trap_proj, a vector of fishing mortality (trap)
-@param growth_id, a vector of indicators (growth block)
-@param SFrac, fraction of year prior to spawning
+#\code{run_projection} run the projection model with specified inputs 
+#@param report, a .rep file contains outputs from the assessment model
+#@param par_est, a .std file contains standard error estimates 
+#@param select_id, a vector - number of selectivity time blocks, which one for trawl and which one for trap used in projection
+#@param M, natrual mortality 
+#@param n_proj_year, number of years (projection)
+#@param N_rep, number of iterations
+#@param F_trawl_proj, a vector of fishing mortality (trawl)
+#@param F_trap_proj, a vector of fishing mortality (trap)
+#@param growth_id, a vector of indicators (growth block)
+#@param SFrac, fraction of year prior to spawning
 
 run_projection <- function(report = report, par_est = par_est, select_id = select_id, M = M,
 					n_proj_year = n_proj_year, N_rep = N_rep, F_trawl_proj = F_trawl_proj, F_trap_proj = F_trap_proj,
-					R_proj = R_proj, growth_id = growth_id, SFrac = 1/3, R_rand = T, R_sd = R_sd){
+					R_proj = R_proj, growth_id = growth_id, SFrac = 1/3, R_rand = T, R_logsd = R_logsd){
 		
 		#selectivity
 		n_sel_blocks = select_id[1]
@@ -54,7 +54,7 @@ run_projection <- function(report = report, par_est = par_est, select_id = selec
   					{
     						# define recruitment
     						if(R_rand){
-    							R_proj_temp = rnorm(1,R_proj[y],R_sd)
+    							R_proj_temp = rlnorm(1,log(R_proj[y])-R_logsd^2,R_logsd)
     						}else{
     							R_proj_temp = R_proj[y]
     							}
