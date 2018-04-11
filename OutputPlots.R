@@ -1,5 +1,5 @@
 
-setwd("/Users/jiecao/Desktop/Umaine_model/Updated_runs/base_case")
+setwd("/Users/jiecao/Google Drive/work/Umaine_model/base_case")
 source("reptoRlist.r");source("ADMB_read.r");source("run_projection.r")
 filename="NSLSAP01"
 report<-read.admb(filename);par_est <- std_read("nslsap01.std")
@@ -42,8 +42,8 @@ PlotER()
 dev.off()
 
 # projection
-run_projection(report = report, par_est = par_est, select_id = c(5,3,4), M = 0.25,
-			    N_proj = 5, N_rep = 10000, F_trawl_proj = c(0,0,0,0,0), F_trap_proj = c(0,0,0,0,0), 					R_proj = c(1000,1000,1000,1000,1000), growth_id = c(1,2))
+run_projection(report = report, par_est = par_est, select_id = c(5,3,4), M = 0.35,
+			    n_proj_year = 5, N_rep = 10000, F_trawl_proj = c(0.6,0.6,0.6,0.6,0.6), F_trap_proj = c(0.01,0.01,0.01,0.01,0.01), R_proj = c(500,500,500,500,500), growth_id = c(1,2), R_rand = T, R_sd = 0.5)
 
 
 
