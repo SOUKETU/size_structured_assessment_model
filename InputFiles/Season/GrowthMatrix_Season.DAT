@@ -1,0 +1,42 @@
+
+#Growth matrix set-up (2-one growth matrix for a year using growth fraction for each season;  1-VBGF Parameters; 0-input growth matrix)
+1
+#Number of growth matrices
+2
+#Growth matrix time blocks set-up
+1984	1	2
+1985	1	2
+1986	1	2
+1987	1	2
+1988	1	2
+1989	1	2
+1990	1	2
+1991	1	2
+1992	1	2
+1993	1	2
+1994	1	2
+1995	1	2
+1996	1	2
+1997	1	2
+1998	1	2
+1999	1	2
+2000	1	2
+2001	1	2
+2002	1	2
+2003	1	2
+2004	1	2
+2005	1	2
+2006	1	2
+2007	1	2
+2008	1	2
+2009	1	2
+2010	1	2
+2011	1	2
+2012	1	2
+2013	1	2
+
+#Growth proportion for each Season
+0.01   0.30    
+
+#Check Number
+-22122

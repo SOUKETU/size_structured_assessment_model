@@ -1,0 +1,22 @@
+
+#Do projections? (1=yes, 0=no)
+0
+#Number of years for projection
+5
+#Recruitment set-up (1-Input recruitment; 2-Input recruitment deviation and use R-S relationship; 3-Randomly choose from history)
+1
+#Recruitment input (if above option is set to 1, still need to enter values even if not 1)
+2750	2750	2750	2750	2750
+#Selectivity option (1-Input selectivity; 2-BRP Selectivity; 3-Averaged values of fleet selectivity)
+3
+#Selectivity input (if above option is set to 1, still need to enter values even if not 1)
+1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+#Control? (1-Catch; 0-F)
+1
+#Catch or F input
+30.000000	30.000000	30.000000	30.000000      30.000000	
+#Growth matrix set-up (which time block of growth matrix)
+1	
+
+#Check Number
+-22122

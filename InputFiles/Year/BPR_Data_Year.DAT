@@ -1,0 +1,18 @@
+
+#Maximum F value in penalty term
+4.000000
+#Selectivity set-up (-1-input; 0-averaged fleet selectiviey; #?#:fleet selectivity)
+0
+#Selectivity input (if above option is set to -1)
+1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+#Equilibrium period 
+50
+#Reference year for mortality
+30
+#F proportions for each season (1 for annual time-step)
+1	
+#Growth matrix set-up (which time block of growth matrix)
+1
+
+#Check Number
+-22122

@@ -1,0 +1,22 @@
+
+#Indicator of time-step (1-year;4-season)
+2
+#Number of years
+30
+#Number of seasons in each year
+2
+#Number of months in each season
+6    6    
+#First year of the input data
+1984
+#First year for calculation
+1984
+#Last year for calculation
+2013
+#Include likelihood constants? (1=yes; 0=no)
+0
+#DiCohortTrackingBeginYear (track a cohort)
+1985
+
+#Check Number
+999
